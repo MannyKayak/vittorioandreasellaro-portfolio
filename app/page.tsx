@@ -1,12 +1,16 @@
 "use client";
+
+import AboutSection from "@/components/AboutSection";
+import BimSection from "@/components/BimSection";
 import HeroSection from "@/components/HeroSection";
-import Calendar from "./calendar/page";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="font-bim-medium ">
       {/* hero section */}
       <HeroSection />
+      <BimSection />
+      <AboutSection />
     </main>
   );
 }

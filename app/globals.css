@@ -4,14 +4,15 @@
   --background: #ffffff;
   --foreground: #171717;
   --bim-color: #1a988c;
+  --font-bim-medium: var(--font-klavika); /* CORRETTO */
 }
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-roboto);
   --font-mono: var(--font-roboto-mono);
   --bim-color: var(--bim-color);
+  --font-bim-medium: var(--font-klavika); /* CORRETTO */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,9 +23,20 @@
   }
 }
 
+html,
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE e Edge */
+  box-sizing: border-box;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  bim-color: var(--bim-color);
+  font-family: var(--font-bim-medium); /* Usa la variabile */
 }
