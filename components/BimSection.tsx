@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import CalendarSelector from "./CalendarSelector";
-import CalendarList from "./CalendarList";
 import ArticleShowList from "./ArticleShowList";
+import Link from "next/link";
 
 export default function BimSection() {
   return (
@@ -19,7 +19,15 @@ export default function BimSection() {
           <div>tutti gli eventi</div>
         </div>
         <div>
-          <h1>Qui trovi tutti gli articoli</h1>
+          <h1>
+            <Link
+              href={"/"}
+              className="font-bold z-30 text-teal-700 hover:text-emerald-400"
+            >
+              Qui
+            </Link>{" "}
+            trovi tutti gli articoli
+          </h1>
           {/* qui deve venire fuori una s */}
           <ArticleShowList />
         </div>

@@ -4,11 +4,14 @@
     "title": "BIM e Intelligenza Artificiale: successo storico all’Università Napoli Federico II",
     "link": "https://www.bimportale.com/bim-intelligenza-artificiale-successo-storico-alluniversita-napoli-federico-ii/",
     "abstract": "La conferenza 'BIM e Intelligenza Artificiale' alla Federico II ha attratto esperti, accademici e studenti, offrendo spunti innovativi sull’integrazione tra progettazione digitale e IA nel settore edile.",
-    "article-date": "2024-12-04",
-    "event-date": "2024-11-23",
+    "articleDate": "2024-12-04",
+    "eventDate": "2024-11-23",
     "author": "Redazione BIMportale",
     "image": "https://www.bimportale.com/wp-content/uploads/2024/12/0.jpg",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "bimportale"
   },
   {
@@ -16,11 +19,14 @@
     "title": "23 novembre 2024 – BIM (K)now! – BIM e Intelligenza Artificiale",
     "link": "https://www.bimportale.com/23-novembre-2024-bim-know-bim-intelligenza-artificiale/",
     "abstract": "Il ciclo di conferenze BIM (K)now!, ideato da Vittorio Andrea Sellaro, ha offerto un'importante occasione di aggiornamento professionale su digitalizzazione e BIM, coinvolgendo esperti di alto profilo.",
-    "article-date": "2024-11-06",
-    "event-date": "2024-11-23",
+    "articleDate": "2024-11-06",
+    "eventDate": "2024-11-23",
     "author": "Redazione BIMportale",
     "image": "https://www.bimportale.com/wp-content/uploads/2024/11/cover.jpg",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "bimportale"
   },
   {
@@ -28,154 +34,178 @@
     "title": "\"BIM e intelligenza artificiale\": le nuove frontiere delle costruzioni al centro della conferenza di Napoli",
     "link": "https://www.ingenio-web.it/articoli/bim-e-intelligenza-artificiale-le-nuove-frontiere-delle-costruzioni-al-centro-della-conferenza-di-napoli/",
     "abstract": "Il convegno 'BIM e Intelligenza Artificiale' ha riunito esperti per esplorare l'integrazione tra digitalizzazione e costruzioni, presentando casi studio e soluzioni pratiche.",
-    "article-date": "2024-11-07",
-    "event-date": "2024-11-23",
+    "articleDate": "2024-11-07",
+    "eventDate": "2024-11-23",
     "author": "Valeria Cera",
     "image": "https://www.ingenio-web.it/upload/image/a/4/6/472e9caa46f46a4d80bd1c606b628636956c8371.jpg",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "ingenio-web"
   },
   {
     "id": 3,
-
     "title": "BIM(K)now!: \"BIM e Intelligenza Artificiale\"",
     "link": "https://www.unina.it/-/64122221-bim-k-now-bim-e-intelligenza-artificiale-",
     "abstract": "La conferenza 'BIM e Intelligenza Artificiale' ha riunito esperti e professionisti per discutere l'integrazione tra digitalizzazione e costruzioni, con focus su strategie e tecnologie avanzate.",
-    "article-date": "2024-11-08",
-    "event-date": "2024-11-23",
+    "articleDate": "2024-11-08",
+    "eventDate": "2024-11-23",
     "author": "Redazione UNINA",
     "image": "https://www.unina.it/documents/11897/0/BIM+e+Intelligenza+Artificiale/3528a12e-b907-4d34-ad36-827c1732b725?t=1731056058107",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "unina"
   },
   {
     "id": 4,
-
     "title": "BIM (K)now! 2024: l’Università di Napoli ospita il convegno su BIM e Intelligenza Artificiale",
     "link": "https://ediltecnico.it/bim-know-2024-universita-di-napoli-convegno-bim-intelligenza-artificiale/",
     "abstract": "Il convegno 'BIM (K)now! 2024' ha esplorato l'integrazione tra BIM e Intelligenza Artificiale, coinvolgendo esperti e professionisti del settore.",
-    "article-date": "2024-11-12",
-    "event-date": "2024-11-23",
+    "articleDate": "2024-11-12",
+    "eventDate": "2024-11-23",
     "author": "Redazione Tecnica",
     "image": "https://ediltecnico.it/wp-content/uploads/2024/11/DEFINITIVA_23.11.2024-FEDERICO-II-e1731420474602.jpg",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "ediltecnico"
   },
   {
     "id": 5,
-
     "title": "BIM (K)now! – Intelligenza Artificiale e Digitalizzazione",
     "link": "https://www.infobuild.it/eventi/intelligenza-artificiale-bim-know-digitalizzazione/",
     "abstract": "Il convegno 'BIM (K)now!' ha esplorato l'integrazione tra BIM e Intelligenza Artificiale, coinvolgendo esperti e professionisti del settore.",
-    "article-date": "2024-11-06",
-    "event-date": "2024-11-23",
+    "articleDate": "2024-11-06",
+    "eventDate": "2024-11-23",
     "author": "Redazione Infobuild",
     "image": "https://www.infobuild.it/wp-content/uploads/bimknow.png",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "infobuild"
   },
   {
     "id": 6,
-
     "title": "BIM Worldwide: Bringing Borders in Global Tenders",
     "link": "https://www.bimportale.com/venerdi-14-marzo-2025-bim-worldwide-bringing-borders-global-tenders/",
     "abstract": "L'evento 'BIM Worldwide' ha esplorato le esperienze di flussi BIM nei bandi internazionali, promuovendo la collaborazione globale nel settore delle costruzioni.",
-    "article-date": "2025-03-10",
-    "event-date": "2025-03-14",
+    "articleDate": "2025-03-10",
+    "eventDate": "2025-03-14",
     "author": "Valerio Carena",
     "image": "https://www.bimportale.com/wp-content/uploads/2025/03/IMG-20250310-WA0007.jpg",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "bimportale"
   },
   {
     "id": 7,
-
     "title": "BIM (K)now!: BIM tra digitale e artigianale",
     "link": "https://www.unipv.news/eventi/bim-know-bim-tra-digitale-e-artigianale",
     "abstract": "La conferenza conclusiva del ciclo BIM (K)now! ha visto protagonisti i BIM Manager di RPBW, esplorando l'equilibrio tra approccio digitale e artigianale nel BIM.",
-    "article-date": "2024-05-29",
-    "event-date": "2024-06-14",
+    "articleDate": "2024-05-29",
+    "eventDate": "2024-06-14",
     "author": "Redazione UNIPV",
     "image": "https://www.unipv.news/sites/magazine/files/styles/max_2600x2600/public/2024-12/Ingegneria%20Ingresso%20Nave%20Estate.jpg?itok=v_BnOlwB",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "unipv.news"
   },
   {
     "id": 8,
-
     "title": "Al via il ciclo di incontri \"BIM (K)now!\"",
     "link": "https://www.unipv.news/eventi/al-il-ciclo-di-incontri-bim-know",
     "abstract": "L'Università di Pavia inaugura il ciclo 'BIM (K)now!', una serie di conferenze sul BIM con esperti di fama internazionale, esplorando innovazioni nella digitalizzazione e progettazione architettonica.",
-    "article-date": "2024-03-14",
-    "event-date": "2024-03-22",
+    "articleDate": "2024-03-14",
+    "eventDate": "2024-03-22",
     "author": "Redazione UNIPV",
     "image": "https://media.licdn.com/dms/image/D4D22AQH5LeMdd4NFXA/feedshare-shrink_2048_1536/0/1716214405467?e=2147483647&t=ewEW-Veu3f6ImdQxX0T29k1wcmz1eWYJJTkVNuoymUY&v=beta",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "unipv"
   },
   {
     "id": 9,
-
     "title": "BIM (K)now!: BIM Unlocked - Shaping Digital Collaboration",
     "link": "https://www.unipv.news/eventi/bim-know-bim-unlocked-shaping-digital-collaboration",
     "abstract": "Il convegno 'BIM Unlocked' ha esplorato l'ottimizzazione dei processi collaborativi nel settore delle costruzioni, coinvolgendo esperti internazionali e accademici.",
-    "article-date": "2025-03-20",
-    "event-date": "2025-03-28",
+    "articleDate": "2025-03-20",
+    "eventDate": "2025-03-28",
     "author": "Redazione UNIPV",
     "image": "https://www.unipv.news/sites/magazine/files/styles/max_2600x2600/public/2024-12/Facciata%20Aula%20400%20e%20Disegno%20con%20Duomo%20e%20Museo%20Archeologia.jpg?itok=CipRn4Y5",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "unipv"
   },
   {
     "id": 10,
-
     "title": "BIM (K)now!: Progettare attraverso il BIM",
     "link": "https://news.unipv.it/?p=81163",
     "abstract": "Il ciclo di incontri 'BIM (K)now!' dell'Università di Pavia esplora il BIM nella progettazione, con esperti come Fabrizio Bassetta e Laura Tiburzi di Mario Cucinella Architects.",
-    "article-date": "2023-03-31",
-    "event-date": "2023-03-31",
+    "articleDate": "2023-03-31",
+    "eventDate": "2023-03-31",
     "author": "Redazione UNIPV",
     "image": "https://news.unipv.it/wp-content/uploads/2023/03/Copertina-news-BIM.jpg",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "unipv"
   },
   {
     "id": 11,
-
     "title": "BIM (K)now!: BIM Tracks – Smart Connections for a Digital Future",
     "link": "https://www.unipv.news/eventi/bim-know-bim-tracks-smart-connections-digital-future",
     "abstract": "Il convegno ha esplorato il panorama BIM nel settore delle infrastrutture, con esperti di Italferr, ANAS e Webuild, promuovendo connessioni intelligenti per un futuro digitale.",
-    "article-date": "2025-03-20",
-    "event-date": "2025-04-09",
+    "articleDate": "2025-03-20",
+    "eventDate": "2025-04-09",
     "author": "Redazione UNIPV",
     "image": "https://www.unipv.news/sites/magazine/files/2025-03/2025_04_09_BIM%20KNOW_Locandina.pdf",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "unipv"
   },
   {
     "id": 12,
-
     "title": "BIM Unlocked e BIM Tracks: quando il futuro digitale incontra la cultura della collaborazione",
     "link": "https://www.bimportale.com/bim-unlocked-bim-tracks-futuro-digitale-incontra-la-cultura-della-collaborazione/",
     "abstract": "Due eventi a Pavia esplorano il ruolo del BIM nella collaborazione digitale, coinvolgendo esperti internazionali e promuovendo il dialogo su innovazione e progettazione.",
-    "article-date": "2025-04-23",
-    "event-date": "2025-03-28",
+    "articleDate": "2025-04-23",
+    "eventDate": "2025-03-28",
     "author": "Valerio Carena",
     "image": "https://www.bimportale.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-17-at-18.39.34-4.jpg",
-    "type": "article",
+    "type": [
+      "article"
+    ],
     "host": "bimportale"
   },
   {
     "id": 13,
-
     "title": "BIMeet al fianco di BIM (K)now! per l’evento “BIM Tracks – Smart Connections for a Digital Future” – 9 aprile, Pavia",
     "link": "https://skeinbim.com/bimeet-al-fianco-di-bim-know-per-levento-bim-tracks-smart-connections-for-a-digital-future-9-aprile-pavia/",
     "abstract": "Il 9 aprile 2025, l'Università di Pavia ospiterà la conferenza 'BIM Tracks', organizzata da BIM (K)now! con la partecipazione di esperti di Italferr, ANAS e Webuild, per discutere l'integrazione del BIM nelle infrastrutture.",
-    "article-date": "2025-04-02",
-    "event-date": "2025-04-09",
+    "articleDate": "2025-04-02",
+    "eventDate": "2025-04-09",
     "author": "SkeinBIM",
     "image": "https://skeinbim.com/wp-content/uploads/2025/03/9aprile-1536x638.jpg",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "skeinbim"
   },
   {
@@ -183,11 +213,14 @@
     "title": "BIM (K)now! Back to Napoli – Designing Tomorrow",
     "link": "https://skeinbim.com/bim-know-back-to-napoli-designing-tomorrow/",
     "abstract": "Il 28 aprile 2025, l'Università di Napoli Federico II ha ospitato l'evento 'BIM (K)now! Back to Napoli – Designing Tomorrow', focalizzato sull'integrazione tra BIM e intelligenza artificiale nel settore delle costruzioni.",
-    "article-date": "2025-04-28",
-    "event-date": "2025-04-28",
+    "articleDate": "2025-04-28",
+    "eventDate": "2025-04-28",
     "author": "Redazione SkeinBIM",
     "image": "https://skeinbim.com/wp-content/uploads/2025/04/Bim-Know-torna-a-Napoli-1536x637.jpg",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "skeinbim"
   },
   {
@@ -195,11 +228,14 @@
     "title": "BIMeet al fianco di BIM (K)now! per l’evento “BIM Unlocked – Shaping Digital Collaboration” – 28 marzo, Pavia",
     "link": "https://skeinbim.com/bimeet-al-fianco-di-bim-know-per-levento-bim-unlocked-shaping-digital-collaboration-28-marzo-pavia/",
     "abstract": "L'evento 'BIM Unlocked' ha esplorato l'uso del BIM per ottimizzare la collaborazione digitale nel settore delle costruzioni, con interventi di esperti internazionali.",
-    "article-date": "2025-03-21",
-    "event-date": "2025-03-28",
+    "articleDate": "2025-03-21",
+    "eventDate": "2025-03-28",
     "author": "Redazione SkeinBIM",
     "image": "https://skeinbim.com/wp-content/uploads/2025/03/28marzo-1536x638.jpg",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "skeinbim"
   },
   {
@@ -207,11 +243,14 @@
     "title": "19 aprile 2024 – BIM (K)now!: ospite STEFANO BOERI ARCHITETTI",
     "link": "https://www.bimportale.com/19-aprile-2024-bim-know-ospite-stefano-boeri-architetti/",
     "abstract": "Il 19 aprile 2024, Andrea Spadoni e Gabriella Coletta di Stefano Boeri Architetti hanno discusso l'uso del BIM nella rigenerazione urbana durante l'evento BIM (K)now! all'Università di Pavia.",
-    "article-date": "2024-04-17",
-    "event-date": "2024-04-19",
+    "articleDate": "2024-04-17",
+    "eventDate": "2024-04-19",
     "author": "Redazione BIMportale",
     "image": "https://www.bimportale.com/wp-content/uploads/2024/04/LOCANDINA-BIM-Know-.jpg",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "bimportale"
   },
   {
@@ -219,11 +258,14 @@
     "title": "bim (k)now! | andrea spadoni & gabriella coletta",
     "link": "https://www.stefanoboeriarchitetti.net/homepage/bim-know-andrea-spadoni-gabriella-coletta/",
     "abstract": "Il 19 aprile 2024, Andrea Spadoni e Gabriella Coletta di Stefano Boeri Architetti hanno presentato l'uso del BIM nella rigenerazione urbana durante l'evento BIM (K)now! all'Università di Pavia.",
-    "article-date": "2024-04-17",
-    "event-date": "2024-04-19",
+    "articleDate": "2024-04-17",
+    "eventDate": "2024-04-19",
     "author": "Redazione Stefano Boeri Architetti",
     "image": "https://www.stefanoboeriarchitetti.net/wp-content/uploads/2024/04/bim-scaled.jpg",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "stefanoboeriarchitetti"
   },
   {
@@ -231,11 +273,14 @@
     "title": "Andrea Manente on integrating BIM in our creative process",
     "link": "https://www.mvrdv.com/events/4669/andrea-manente-on-integrating-bim-in-our-creative-process",
     "abstract": "Andrea Manente ha illustrato l'integrazione del BIM nel processo creativo di MVRDV, presentando progetti come Valley, Matrix ONE e Depot Boijmans van Beuningen.",
-    "article-date": "2025-03-28",
-    "event-date": "2025-03-28",
+    "articleDate": "2025-03-28",
+    "eventDate": "2025-03-28",
     "author": "Redazione MVRDV",
     "image": "https://mvrdv.com/media/uploads/MVRDV%20Matrix%20One%201%20%C2%A9%20Daria%20Scagliola(4).jpg?width=1920",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "mvrdv"
   },
   {
@@ -243,11 +288,14 @@
     "title": "A che punto siamo in Italia con la formazione BIM a scuola?",
     "link": "https://skeinbim.com/bim-a-scuola-a-che-punto-siamo-in-italia/",
     "abstract": "L'articolo analizza lo stato dell'insegnamento del BIM in Italia, evidenziando la crescente presenza nelle università e la necessità di introdurlo anche nelle scuole superiori.",
-    "article-date": "2024-05-31",
-    "event-date": "",
+    "articleDate": "2024-05-31",
+    "eventDate": "",
     "author": "Redazione SkeinBIM",
     "image": "https://skeinbim.com/wp-content/uploads/2024/05/BIM-nellistruzione-1536x1152.jpg",
-    "type": "insight article",
+    "type": [
+      "insight",
+      "article"
+    ],
     "host": "skeinbim"
   },
   {
@@ -255,11 +303,14 @@
     "title": "BIMeet Archivi | SkeinBIM",
     "link": "https://skeinbim.com/tag/bimeet/",
     "abstract": "La sezione 'BIMeet' di SkeinBIM raccoglie articoli, eventi e approfondimenti sul primo podcast italiano dedicato al BIM, offrendo risorse su digitalizzazione, progettazione e innovazione nel settore delle costruzioni.",
-    "article-date": "2024-10-12",
-    "event-date": "",
+    "articleDate": "2024-10-12",
+    "eventDate": "",
     "author": "Redazione SkeinBIM",
     "image": "https://skeinbim.com/wp-content/uploads/2024/11/BIM-e-intelligenza-artificiale-Napoli-1536x738.jpg",
-    "type": "resource page",
+    "type": [
+      "resource",
+      "page"
+    ],
     "host": "skeinbim"
   },
   {
@@ -267,11 +318,14 @@
     "title": "Vittorio Andrea Sellaro, Università degli Studi di Pavia: il cambiamento è prima di tutto culturale",
     "link": "https://www.bimportale.com/vittorio-andrea-sellaro-universita-degli-studi-pavia-cambiamento-culturale/",
     "abstract": "Il Prof. Sellaro discute l'importanza del cambiamento culturale nell'adozione del BIM, evidenziando l'esperienza del corso TeDCAT e l'iniziativa BIM (K)now! all'Università di Pavia.",
-    "article-date": "2023-07-05",
-    "event-date": "",
+    "articleDate": "2023-07-05",
+    "eventDate": "",
     "author": "Cecilia Cantadore",
     "image": "https://www.bimportale.com/wp-content/uploads/2023/07/vittorio-andrea-sellaroBN.jpeg",
-    "type": "interview article",
+    "type": [
+      "interview",
+      "article"
+    ],
     "host": "bimportale"
   },
   {
@@ -279,11 +333,14 @@
     "title": "BIM (K)now! – BIM for Impact: Designing Tomorrow",
     "link": "https://2025.festivalsvilupposostenibile.it/cal/211/bim-know-conferenza-bim-for-impact-designing-tomorrow",
     "abstract": "La conferenza esplora il ruolo del BIM nella progettazione sostenibile, promuovendo l'Agenda 2030 attraverso innovazione, rigenerazione urbana e formazione.",
-    "article-date": "2025-04-15",
-    "event-date": "2025-05-09",
+    "articleDate": "2025-04-15",
+    "eventDate": "2025-05-09",
     "author": "Redazione Festival Sviluppo Sostenibile",
     "image": "https://2025.festivalsvilupposostenibile.it/plugins/slir/w740-/public/asvisfestival25/images/cal/211/immagine_9_maggio_2025-04-24_18-23-42.png",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "festivalsvilupposostenibile"
   },
   {
@@ -291,11 +348,14 @@
     "title": "BIM (K)now! Double Session: BIM 2025 – Setting the New Standard | Next-Gen BIM: AI-Driven Innovation",
     "link": "https://2025.festivalsvilupposostenibile.it/cal/1004/bim-know-double-session-bim-2025-setting-the-new-standard-next-gen-bim-ai-driven-innovation",
     "abstract": "Il 27 maggio 2025, l'Università di Pavia ospiterà due seminari su BIM e AI, promuovendo la sostenibilità e l'innovazione nel settore edilizio.",
-    "article-date": "2025-04-15",
-    "event-date": "2025-05-27",
+    "articleDate": "2025-04-15",
+    "eventDate": "2025-05-27",
     "author": "Redazione Festival Sviluppo Sostenibile",
     "image": "https://2025.festivalsvilupposostenibile.it/plugins/slir/w740-/public/asvisfestival25/images/cal/1004/immagine_2025-04-23_18-19-54.png",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "festivalsvilupposostenibile"
   },
   {
@@ -303,11 +363,14 @@
     "title": "BIM (K)now! – Digital Twin e AI",
     "link": "https://www.unipv.news/eventi/bim-know-digital-twin-e-ai",
     "abstract": "Il 12 aprile 2024, l'Università di Pavia ha ospitato l'evento 'Digital Twin e AI', con l'Arch. Riccardo Pagani di BIMon, esplorando l'uso dei gemelli digitali intelligenti nel BIM.",
-    "article-date": "2024-04-09",
-    "event-date": "2024-04-12",
+    "articleDate": "2024-04-09",
+    "eventDate": "2024-04-12",
     "author": "Redazione UNIPV",
     "image": "https://www.unipv.news/sites/magazine/files/styles/max_2600x2600/public/2024-12/Ingegneria%20Ingresso%20Nave%20Estate.jpg?itok=v_BnOlwB",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "unipv"
   },
   {
@@ -315,11 +378,14 @@
     "title": "BIM (K)now! 2025: innovazione e formazione per il futuro del BIM",
     "link": "https://ediltecnico.it/bim-know-2025-pavia/",
     "abstract": "Il ciclo di conferenze 'BIM (K)now!' 2025 a Pavia ha approfondito l'uso del BIM nella collaborazione digitale e nelle infrastrutture, coinvolgendo esperti internazionali e accademici.",
-    "article-date": "2025-03-25",
-    "event-date": "2025-03-28",
+    "articleDate": "2025-03-25",
+    "eventDate": "2025-03-28",
     "author": "Redazione Ediltecnico",
     "image": "https://ediltecnico.it/wp-content/uploads/2025/03/LOCANDINA-SINGOLO-EVENTO_CONFERENZA-1-e1742901492630.jpg",
-    "type": "event article",
+    "type": [
+      "event",
+      "article"
+    ],
     "host": "ediltecnico"
   }
 ]

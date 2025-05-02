@@ -6,6 +6,7 @@
   --bim-color: #1a988c;
   --font-bim-medium: var(--font-klavika); /* CORRETTO */
 }
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
