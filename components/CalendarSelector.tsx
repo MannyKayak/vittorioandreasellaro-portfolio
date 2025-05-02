@@ -1,10 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PreviousIcon from "./icons/PreviousIcon";
 import NextIcon from "./icons/NextIcon";
 import NextYearIcon from "./icons/NextYearIcon";
 import PreviousYearIcon from "./icons/PreviousYearIcon";
+import { toDateObject } from "@/functions/utils";
+import LocationIcon from "./icons/LocationIcon";
 
 const daysOfWeek = ["Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"];
 
@@ -44,10 +46,23 @@ function getDaysInMonth(month: number, year: number): number {
   ][month];
 }
 
+type BimEvent = {
+  id: string;
+  title: string;
+  description: string;
+  location: string;
+  schedule: string[];
+  date: Date;
+  isPassed: boolean;
+  locandina: string;
+};
+
 export default function CalendarSelector() {
   const today = new Date();
   const [month, setMonth] = useState(today.getMonth());
   const [year, setYear] = useState(today.getFullYear());
+  const [allEventsData, setAllEventsData] = useState<BimEvent[]>([]);
+  const [EventsOfTheMonth, setEventsOfTheMonth] = useState<BimEvent[]>([]);
 
   const firstDay = new Date(year, month, 1).getDay(); // 0 (Sun) – 6 (Sat)
   const daysInMonth = getDaysInMonth(month, year);
@@ -80,19 +95,69 @@ export default function CalendarSelector() {
       month === today.getMonth() &&
       year === today.getFullYear();
 
+    // Calcola la data corrente per il giorno specifico
+    const currentDate = new Date(year, month, dayNum);
+    // Controlla se ci sono eventi in quel giorno
+    const dayEvents = EventsOfTheMonth.filter(
+      (event) =>
+        event.date.getDate() === currentDate.getDate() &&
+        event.date.getMonth() === currentDate.getMonth() &&
+        event.date.getFullYear() === currentDate.getFullYear()
+    );
+
+    console.log(EventsOfTheMonth);
+
     return (
-      <div
-        key={index}
-        className={`aspect-square flex items-center justify-center border rounded 
-          duration-500 text-sm
+      <div key={index} className="relative group">
+        <div
+          className={`aspect-square flex items-center justify-center border rounded
+          duration-500 text-sm cursor-default
           ${isCurrentMonth ? "bg-gray-50" : "opacity-0"}
           ${isToday ? "text-green-600 font-bold" : ""}
-          hover:rotate-y-10 hover:rotate-x-15 hover:-rotate-z-1  hover:-translate-y-2 hover:translate-x-1 hover:z-10 hover:text-shadow-xs hover:text-shadow-teal-500 hover:shadow-md shadow-red-900`}
-      >
-        {isCurrentMonth ? dayNum : null}
+          ${dayEvents.length > 0 ? "text-red-600 font-semibold" : ""}
+          hover:rotate-y-10 hover:rotate-x-15 hover:-rotate-z-1 hover:-translate-y-2 hover:translate-x-1 hover:z-10 hover:text-shadow-xs hover:text-shadow-teal-500 hover:shadow-md shadow-red-900`}
+        >
+          {isCurrentMonth ? dayNum : null}
+        </div>
+
+        {/* Tooltip con eventi */}
+        {isCurrentMonth && dayEvents.length > 0 && (
+          <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-52 p-1 rounded-lg bg-teal-700 shadow-xl z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            {dayEvents.map((event) => (
+              <div key={event.id} className="border-2 rounded-xl bg-white p-1">
+                <div className="text-sm font-bold">{event.title}</div>
+                <div className="flex flex-row justify-center items-center">
+                  <LocationIcon />
+                  <div className="text-xs text-gray-600">{event.location}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     );
   });
+
+  useEffect(() => {
+    async function fetchEvents() {
+      const res = await fetch("/data/events.json");
+      const allEvents: BimEvent[] = await res.json();
+      const allEventParsed = allEvents.map((item) => ({
+        ...item,
+        date: toDateObject(item.date.toString()),
+      }));
+      setAllEventsData(allEventParsed);
+    }
+
+    fetchEvents();
+  }, []); // Solo al primo montaggio
+
+  useEffect(() => {
+    const filtered = allEventsData.filter(
+      (e) => e.date.getMonth() === month && e.date.getFullYear() === year
+    );
+    setEventsOfTheMonth(filtered);
+  }, [month, year, allEventsData]); // Si aggiorna ogni volta che cambia mese o arrivano nuovi dati
 
   return (
     <div className="max-w-md border-6 rounded-4xl border-red-800 bg-gray-200 hover:rotate-y-10 hover:rotate-x-15 hover:-rotate-z-1 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-950 duration-700">

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "event0",
+    "title": "BIM for Impact: Designing Tomorrow",
+    "description": "A unique event designed by Prof. Vittorio Andrea Sellaro, with the strategic collaboration of Prof. Massimiliano Campi and Prof. Valeria Cera, bringing together academia, professionals, and industry leaders.",
+    "location": "Napoli",
+    "schedule": [
+      "14:30 – Registration",
+      "14:35 – Opening by Prof. Sellaro",
+      "14:45 – Institutional greetings",
+      "15:00 – Literary spark + Speakers' session",
+      "16:30 – Roundtable discussion",
+      "16:45 – Dynamic Q&A with Archetipi Collective",
+      "17:15 – Networking + Final greetings"
+    ],
+    "date": "2025-05-09",
+    "isPassed": false,
+    "locandina": "image-uri"
+  },
+  {
+    "id": "event1",
+    "title": "BIM for Impact: Designing Tomorrow",
+    "description": "A unique event designed by Prof. Vittorio Andrea Sellaro, with the strategic collaboration of Prof. Massimiliano Campi and Prof. Valeria Cera, bringing together academia, professionals, and industry leaders.",
+    "location": "Pavia",
+    "schedule": [
+      "14:30 – Registration",
+      "14:35 – Opening by Prof. Sellaro",
+      "14:45 – Institutional greetings",
+      "15:00 – Literary spark + Speakers' session",
+      "16:30 – Roundtable discussion",
+      "16:45 – Dynamic Q&A with Archetipi Collective",
+      "17:15 – Networking + Final greetings"
+    ],
+    "date": "2025-05-27",
+    "isPassed": false,
+    "locandina": "image-uri"
+  }
+]
