@@ -1,14 +1,25 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-async function fetchJSON(url: string) {
-  const resp = await fetch(url);
-  const json = await resp.json();
-  return json;
-}
-export default async function ArticleShowList() {
-  // fetch dei dati sintetico, listo i primi 4 risultati, in ordine cronologico
-  const miniArticleList = fetchJSON("./data/articles.json");
-  console.log(miniArticleList);
-  return <div>ArticleShowList</div>;
+type Article = {
+  title: string;
+  date: string;
+  abstract: string;
+  // aggiungi altri campi se necessari
+};
+
+export default function ArticleShowList() {
+  const [articles, setArticles] = useState<Article[]>([]);
+
+  useEffect(() => {
+    async function fetchArticles() {
+      const res = await fetch("/data/articles.json");
+      const data = await res.json();
+      setArticles(data.slice(0, 4)); // ad es. primi 4 articoli
+    }
+
+    fetchArticles();
+  }, []);
+
+  return <div></div>;
 }
