@@ -76,7 +76,7 @@ export default function HeroSection() {
             onClick={() => handleClick("bim-section")}
           >
             <Image
-              src={"/BIM(k)now!.png"}
+              src={"/bimknow_image.png"}
               width={200}
               height={20}
               alt="bimknow"

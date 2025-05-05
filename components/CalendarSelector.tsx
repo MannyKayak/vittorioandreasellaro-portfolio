@@ -95,8 +95,6 @@ export default function CalendarSelector() {
         event.date.getFullYear() === currentDate.getFullYear()
     );
 
-    console.log(EventsOfTheMonth);
-
     return (
       <div key={index} className="relative group">
         <div
