@@ -21,7 +21,7 @@ export default function BimSection() {
         <div>
           <h1>
             <Link
-              href={"/"}
+              href={"/bimknow"}
               className="font-bold z-30 text-teal-700 hover:text-emerald-400"
             >
               Qui

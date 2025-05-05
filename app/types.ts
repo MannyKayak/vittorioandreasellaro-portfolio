@@ -10,3 +10,14 @@ export interface ArticleCard {
   type: string;
   host: string;
 }
+
+export interface BimEvent {
+  id: string;
+  title: string;
+  description: string;
+  location: string;
+  schedule: string[];
+  date: Date;
+  isPassed: boolean;
+  locandina: string;
+}

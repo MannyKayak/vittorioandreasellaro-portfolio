@@ -1,17 +1,35 @@
-type Props = {
-  title: string;
-  date: string;
-  description: string;
-};
+import { BimEvent } from "@/app/types";
+import LocationIcon from "./icons/LocationIcon";
+import DetailsIcon from "./icons/DetailsIcon";
+import { useState } from "react";
 
-export default function EventCard({ title, date, description }: Props) {
+export default function EventCard(CardProps: BimEvent) {
+  const [showDetails, setShowDetails] = useState(false);
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-teal-400 hover:scale-105 transition-transform">
-      <h3 className="font-semibold text-lg mb-1">{title}</h3>
-      <span className="inline-block bg-teal-400 text-white text-xs px-3 py-1 rounded-full mb-2">
-        {date}
-      </span>
-      <p className="text-gray-700">{description}</p>
+    <div className="bg-white rounded-3xl shadow-md p-6 border-l-4 border-teal-600 hover:scale-105 transition-transform">
+      <div className="flex flex-row justify-between items-center">
+        <h2 className=" font-bold text-lg mb-1">{CardProps.title}</h2>
+        <button onClick={() => setShowDetails(!showDetails)}>
+          <DetailsIcon />
+        </button>
+      </div>
+      <div className="flex flex-row items-start gap-2">
+        <span className="flex bg-teal-600 text-white text-md font-bold px-3 py-1 rounded-full mb-2 items-center">
+          {CardProps.date.toString()}
+        </span>
+        <div className="flex flex-row items-center text-xl font-semibold">
+          <LocationIcon />
+          <h4>{CardProps.location}</h4>
+        </div>
+      </div>
+      <p className="text-gray-700">{CardProps.description}</p>
+      {showDetails && (
+        <div>
+          {CardProps.schedule.map((item, i) => (
+            <div key={i}>{item}</div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

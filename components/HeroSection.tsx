@@ -24,7 +24,7 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="relative sm:h-screen overflow-hidden items-center min-h-screen w-full bg-gradient-to-b from-gray-200 to-transparent grid grid-cols-3 md:gap-2">
+    <div className="relative bg-white sm:h-screen overflow-hidden items-center min-h-screen w-full bg-gradient-to-b from-gray-200 to-transparent grid grid-cols-3 md:gap-2">
       {/* Titolo e contenuto a sinistra */}
       <div className="flex flex-col col-span-2 h-full z-30 lg:items-center pb-10">
         <motion.h1

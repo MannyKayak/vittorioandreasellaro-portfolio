@@ -7,6 +7,7 @@ import NextYearIcon from "./icons/NextYearIcon";
 import PreviousYearIcon from "./icons/PreviousYearIcon";
 import { toDateObject } from "@/functions/utils";
 import LocationIcon from "./icons/LocationIcon";
+import { BimEvent } from "@/app/types";
 
 const daysOfWeek = ["Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"];
 
@@ -45,17 +46,6 @@ function getDaysInMonth(month: number, year: number): number {
     31,
   ][month];
 }
-
-type BimEvent = {
-  id: string;
-  title: string;
-  description: string;
-  location: string;
-  schedule: string[];
-  date: Date;
-  isPassed: boolean;
-  locandina: string;
-};
 
 export default function CalendarSelector() {
   const today = new Date();
