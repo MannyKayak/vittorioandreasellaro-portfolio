@@ -47,12 +47,20 @@ function getDaysInMonth(month: number, year: number): number {
   ][month];
 }
 
-export default function CalendarSelector() {
+type CalendarSelectorProps = {
+  size?: "small" | "large";
+};
+
+export default function CalendarSelector({
+  size = "small",
+}: CalendarSelectorProps) {
   const today = new Date();
   const [month, setMonth] = useState(today.getMonth());
   const [year, setYear] = useState(today.getFullYear());
   const [allEventsData, setAllEventsData] = useState<BimEvent[]>([]);
   const [EventsOfTheMonth, setEventsOfTheMonth] = useState<BimEvent[]>([]);
+
+  const sizeClasses = size === "large" ? "w-[30vw]" : "scale-100";
 
   const firstDay = new Date(year, month, 1).getDay(); // 0 (Sun) – 6 (Sat)
   const daysInMonth = getDaysInMonth(month, year);
@@ -96,7 +104,7 @@ export default function CalendarSelector() {
     );
 
     return (
-      <div key={index} className="relative group">
+      <div key={index} className="relative group font-bim-medium">
         <div
           className={`aspect-square flex items-center justify-center border rounded
           duration-500 text-sm cursor-default
@@ -110,13 +118,13 @@ export default function CalendarSelector() {
 
         {/* Tooltip con eventi */}
         {isCurrentMonth && dayEvents.length > 0 && (
-          <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-52 p-1 rounded-lg bg-teal-700 shadow-xl z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+          <div className="absolute top-full left-1/2 text-inherit -translate-x-1/2 mt-1 w-52 p-1 rounded-lg bg-teal-700 shadow-xl z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
             {dayEvents.map((event) => (
               <div key={event.id} className="border-2 rounded-xl bg-white p-1">
                 <div className="text-sm font-bold">{event.title}</div>
                 <div className="flex flex-row justify-center items-center">
                   <LocationIcon />
-                  <div className="text-xs text-gray-600">{event.location}</div>
+                  <div className="text-xs text-gray-600 ">{event.location}</div>
                 </div>
               </div>
             ))}
@@ -148,7 +156,9 @@ export default function CalendarSelector() {
   }, [month, year, allEventsData]); // Si aggiorna ogni volta che cambia mese o arrivano nuovi dati
 
   return (
-    <div className="max-w-md border-6 rounded-4xl border-red-800 bg-gray-200 hover:rotate-y-10 hover:rotate-x-15 hover:-rotate-z-1 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-950 duration-700">
+    <div
+      className={`max-w-md font-bim-medium border-6 rounded-4xl border-red-800 bg-gray-200 hover:rotate-y-10 hover:rotate-x-15 hover:-rotate-z-1 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-950 duration-700 ${sizeClasses}`}
+    >
       {/* Intestazione */}
       <div className="flex justify-between items-center px-4 py-2 bg-red-500 text-amber-50 rounded-t-3xl border-b-4 border-red-800">
         <button onClick={() => setYear(year - 1)} title="Anno precedente">
@@ -157,7 +167,7 @@ export default function CalendarSelector() {
         <button onClick={() => changeMonth(-1)}>
           <PreviousIcon />
         </button>
-        <div className="text-xl font-semibold">
+        <div className="text-xl font-semibold ">
           {months[month]} {year}
         </div>
         <button onClick={() => changeMonth(1)}>

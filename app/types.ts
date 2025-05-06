@@ -3,7 +3,7 @@ export interface ArticleCard {
   title: string;
   link: string;
   abstract: string;
-  articleDdate: string;
+  articleDate: string;
   eventDate: string;
   author: string;
   image: string;
@@ -21,3 +21,16 @@ export interface BimEvent {
   isPassed: boolean;
   locandina: string;
 }
+
+export type Article = {
+  id: number;
+  title: string;
+  link: string;
+  abstract: string;
+  articleDate: string;
+  eventDate: string;
+  author: string;
+  image: string;
+  type: string[];
+  host: string;
+};

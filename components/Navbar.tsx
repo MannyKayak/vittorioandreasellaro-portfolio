@@ -7,13 +7,13 @@ export default function Navbar() {
       <Image src="/bimknow_image.png" width={200} height={20} alt="Bim(k)now" />
       <ul className="flex gap-6 text-gray-700 font-medium">
         <li>
-          <Link href="/bimknow">Calendario</Link>
+          <Link href="/bimknow/bimEventsCalendar">Calendario</Link>
         </li>
         <li>
           <Link href="/bimknow">Eventi</Link>
         </li>
         <li>
-          <Link href="/bimknow">Articoli</Link>
+          <Link href="/articles">Articoli</Link>
         </li>
         <li>
           <Link href="/bimknow">Contatti</Link>

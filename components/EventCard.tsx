@@ -26,7 +26,9 @@ export default function EventCard(CardProps: BimEvent) {
       {showDetails && (
         <div>
           {CardProps.schedule.map((item, i) => (
-            <div key={i}>{item}</div>
+            <div className="text-black" key={i}>
+              {item}
+            </div>
           ))}
         </div>
       )}
