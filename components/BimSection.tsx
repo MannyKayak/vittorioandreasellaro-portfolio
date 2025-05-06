@@ -17,17 +17,23 @@ export default function BimSection() {
       </div>
       <div className="flex md:flex-row flex-col md:justify-evenly justify-center mt-2 text-3xl h-full">
         <div className="flex flex-col justify-center items-center gap-2 mb-4">
-          <h1 className="">Non perderti gli eventi BIM (K)now!</h1>
+          <div className="flex flex-row">
+            <h1 className="flex text-black">Non perderti gli</h1>
+            <h1 className="flex text-teal-600 hover:text-teal-300">
+              <Link href={"/bimknow"}>&nbsp;eventi</Link>
+            </h1>
+            <h1 className="text-black flex"> &nbsp;BIM (K)now!</h1>
+          </div>
+
           <div className="flex justify-center rounded-4xl">
             <CalendarSelector />
           </div>
-          <div>tutti gli eventi</div>
         </div>
         <div>
           <h1>
             <Link
               href={"/articles"}
-              className="font-bold z-30 text-teal-600 hover:text-emerald-400"
+              className="font-bold z-30 text-teal-600 hover:text-teal-300"
             >
               Qui
             </Link>{" "}

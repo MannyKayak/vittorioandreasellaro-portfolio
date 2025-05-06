@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MiniCard from "./MiniCard";
 import { Article } from "@/app/types";
-import { orderByEventDate } from "@/functions/utils";
+import { orderByArticleDate } from "@/functions/utils";
 
 export default function ArticleShowList() {
   const [articles, setArticles] = useState<Article[]>([]);
@@ -11,7 +11,7 @@ export default function ArticleShowList() {
       const res = await fetch("/data/articles.json");
       const data = await res.json();
       // TODO: ordina cronologicamente
-      orderByEventDate(articles);
+      orderByArticleDate(articles);
       setArticles(data.slice(0, 3)); // ad es. primi 4 articoli
     }
 
