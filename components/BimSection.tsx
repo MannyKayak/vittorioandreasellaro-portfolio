@@ -6,7 +6,10 @@ import Link from "next/link";
 
 export default function BimSection() {
   return (
-    <div id="bim-section" className="flex flex-col bg-white h-screen">
+    <div
+      id="bim-section"
+      className="flex flex-col bg-white items-stretch h-full"
+    >
       <div className="flex justify-center ">
         <Image
           src={"/bimknow_image.png"}
@@ -15,7 +18,7 @@ export default function BimSection() {
           alt="bimknow"
         />
       </div>
-      <div className="flex md:flex-row flex-col md:justify-evenly justify-center mt-2 text-3xl h-full">
+      <div className="flex md:flex-row flex-col md:justify-evenly items-stretch justify-center mt-2 text-3xl h-full">
         <div className="flex flex-col justify-center items-center gap-2 mb-4">
           <div className="flex flex-row">
             <h1 className="flex text-black">Non perderti gli</h1>

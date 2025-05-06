@@ -10,7 +10,7 @@ export default function Home() {
       {/* hero section */}
       <HeroSection />
       <BimSection />
-      <AboutSection />
+      <AboutSection portraitUrl="/foto1.jpg" conferenceUrl="/foto2.jpg" />
     </main>
   );
 }
