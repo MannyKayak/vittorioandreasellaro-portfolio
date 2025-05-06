@@ -22,7 +22,7 @@ export default function ArticleCardItem(article: ArticleCard) {
         <h2 className="text-xl font-semibold text-gray-800">{article.title}</h2>
         <p className="text-gray-600 text-sm mt-1">{article.abstract}</p>
         <p className="text-xs text-gray-400 mt-2">
-          Pubblicato da {article.author} il {article.articleDdate}
+          Pubblicato da {article.author} il {article.articleDate}
         </p>
       </div>
     </a>
