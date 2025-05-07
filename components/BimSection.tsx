@@ -8,7 +8,7 @@ export default function BimSection() {
   return (
     <div
       id="bim-section"
-      className="flex flex-col bg-white items-stretch h-full px-4"
+      className="flex flex-col bg-white items-stretch h-full px-4 text-black"
     >
       <div className="flex justify-center ">
         <Image

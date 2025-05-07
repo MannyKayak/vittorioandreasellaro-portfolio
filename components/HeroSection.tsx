@@ -43,7 +43,7 @@ export default function HeroSection() {
             </motion.h1>
 
             <motion.h1
-              className="text-6xl md:text-9xl font-extrabold"
+              className="text-6xl md:text-9xl font-extrabold text-black"
               initial={{ opacity: 0 }}
               animate={
                 animateOut

@@ -31,17 +31,26 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8 text-gray-700 font-semibold">
             <Link
               href="/bimknow/bimEventsCalendar"
-              className="hover:text-blue-600 transition"
+              className="hover:text-teal-600 active:text-teal-600 transition"
             >
               Calendario
             </Link>
-            <Link href="/bimknow" className="hover:text-blue-600 transition">
+            <Link
+              href="/bimknow"
+              className="hover:text-teal-600 active:text-teal-600 transition"
+            >
               Eventi
             </Link>
-            <Link href="/articles" className="hover:text-blue-600 transition">
+            <Link
+              href="/articles"
+              className="hover:text-teal-600 active:text-teal-600 transition"
+            >
               Articoli
             </Link>
-            <Link href="/bimknow" className="hover:text-blue-600 transition">
+            <Link
+              href="/bimknow"
+              className="hover:text-teal-600 active:text-teal-600 transition"
+            >
               Contatti
             </Link>
           </div>
@@ -50,7 +59,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-gray-700 hover:text-blue-600 transition"
+              className="text-gray-700 hover:text-teal-600 active:text-teal-600 transition"
             >
               {isOpen ? (
                 <X className="w-6 h-6" />
@@ -67,25 +76,25 @@ export default function Navbar() {
         <div className="md:hidden bg-white shadow-inner px-6 pb-4 pt-2">
           <Link
             href="/bimknow/bimEventsCalendar"
-            className="block py-2 text-gray-700 hover:text-blue-600"
+            className="block py-2 text-gray-700 hover:text-teal-600 active:text-teal-600"
           >
             Calendario
           </Link>
           <Link
             href="/bimknow"
-            className="block py-2 text-gray-700 hover:text-blue-600"
+            className="block py-2 text-gray-700 hover:text-teal-600 active:text-teal-600"
           >
             Eventi
           </Link>
           <Link
             href="/articles"
-            className="block py-2 text-gray-700 hover:text-blue-600"
+            className="block py-2 text-gray-700 hover:text-teal-600 active:text-teal-600"
           >
             Articoli
           </Link>
           <Link
             href="/bimknow"
-            className="block py-2 text-gray-700 hover:text-blue-600"
+            className="block py-2 text-gray-700 hover:text-teal-600 active:text-teal-600"
           >
             Contatti
           </Link>

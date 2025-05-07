@@ -8,6 +8,7 @@ import PreviousYearIcon from "./icons/PreviousYearIcon";
 import { toDateObject } from "@/functions/utils";
 import LocationIcon from "./icons/LocationIcon";
 import { BimEvent } from "@/app/types";
+import { useRouter } from "next/navigation";
 
 const daysOfWeek = ["Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"];
 
@@ -85,6 +86,8 @@ export default function CalendarSelector({
   };
 
   const days = Array.from({ length: totalCells }, (_, index) => {
+    const router = useRouter();
+
     const dayNum = index - startDay + 1;
     const isCurrentMonth = dayNum > 0 && dayNum <= daysInMonth;
     const isToday =
@@ -103,8 +106,20 @@ export default function CalendarSelector({
         event.date.getFullYear() === currentDate.getFullYear()
     );
 
+    const handleDayClick = (event: BimEvent[]) => {
+      // set toolip visible if there is an event
+      if (isCurrentMonth && dayEvents.length > 0) {
+        // Reindirizza alla pagina del singolo evento
+        router.push(`/bimknow/${event[0].id}`);
+      }
+    };
+
     return (
-      <div key={index} className="relative group font-bim-medium">
+      <button
+        key={index}
+        onClick={() => handleDayClick(dayEvents)}
+        className="relative group font-bim-medium"
+      >
         <div
           className={`aspect-square flex items-center justify-center border rounded
           duration-500 text-sm cursor-default
@@ -118,7 +133,7 @@ export default function CalendarSelector({
 
         {/* Tooltip con eventi */}
         {isCurrentMonth && dayEvents.length > 0 && (
-          <div className="absolute top-full left-1/2 text-inherit -translate-x-1/2 mt-1 w-52 p-1 rounded-lg bg-teal-700 shadow-xl z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+          <div className="absolute top-full left-1/2 text-inherit -translate-x-1/2 mt-1 w-52 p-1 rounded-lg bg-teal-700 shadow-xl z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-auto">
             {dayEvents.map((event) => (
               <div key={event.id} className="border-2 rounded-xl bg-white p-1">
                 <div className="text-sm font-bold">{event.title}</div>
@@ -130,7 +145,7 @@ export default function CalendarSelector({
             ))}
           </div>
         )}
-      </div>
+      </button>
     );
   });
 

@@ -8,12 +8,15 @@ export default function BimEventsCalendar() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col justify-center items-center h-screen bg-white">
-        <h1 className="text-5xl font-bim-medium mt-4 mb-2">
-          Calendario eventi Bim
-        </h1>
-        <div>
-          <CalendarSelector size="large" />
+      <div className="flex flex-col h-screen text-black bg-white">
+        <div className="flex justify-center">
+          <h1 className=" flex text-5xl font-bim-medium mt-4 mb-2">
+            Calendario eventi Bim
+          </h1>
+        </div>
+
+        <div className="px-4">
+          <CalendarSelector />
         </div>
       </div>
     </>

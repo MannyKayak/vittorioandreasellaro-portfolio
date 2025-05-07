@@ -13,23 +13,24 @@ export default function AboutSection({
   return (
     <section
       id="about-me-section"
-      className="w-full max-w-6xl mx-auto px-4 py-20 bg-white"
+      className="w-full max-w-6xl mx-auto px-4 py-20 bg-white text-black"
     >
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         {/* Testo principale - in alto a sinistra */}
         <div className="md:col-span-7 space-y-5">
           <h2 className="text-4xl font-bold text-teal-600 ">Su di me...</h2>
-          <p className="text-lg text-gray-700 dark:text-gray-300">
+          <p className="text-lg text-gray-700 ">
             <strong style={{ color: "#00897b" }}>
               Vittorio Andrea Sellaro
-            </strong>{" "}
-            è un Ingegnere Civile Ambientale, Dottore in Ingegneria
-            Edile-Architettura e Docente universitario. Con un’esperienza
-            pluriennale nella formazione, è specializzato in{" "}
+            </strong>
+            , abilitato alla professione di Ingegnere Civile e Ambientale dal
+            2019, Dottore in Ingegneria Edile-Architettura e Docente
+            universitario. Con un’esperienza pluriennale nella formazione, è
+            specializzato in{" "}
             <strong style={{ color: "#00897b" }}>
               Building Information Modeling (BIM)
-            </strong>{" "}
-            e relatore del ciclo di conferenze{" "}
+            </strong>
+            . Fondatore e relatore del ciclo di conferenze{" "}
             <em style={{ color: "#00897b" }}>“BIM (K)now!”</em>.
           </p>
           <p className="text-md text-gray-600 dark:text-gray-400">

@@ -9,6 +9,7 @@ export default function CalendarList() {
     const fetchEvents = async () => {
       const res = await fetch("/data/events.json");
       const eventsList = await res.json();
+
       setEvents(eventsList);
     };
 

@@ -6,7 +6,7 @@ import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   return (
-    <main className="font-bim-medium ">
+    <main className="font-bim-medium">
       {/* hero section */}
       <HeroSection />
       <BimSection />
