@@ -43,9 +43,9 @@ export default function EventPage({
   }
 
   return (
-    <div className="flex flex-col bg-gray-100 min-h-screen text-black font-bim-medium">
+    <div className="flex flex-col bg-gray-100 min-h-screen text-black font-bim-medium gap-4">
       <Navbar />
-      <div className="container mx-auto p-6">
+      <div className="flex container justify-center">
         <div className="bg-white p-4 rounded-3xl shadow-lg max-w-4xl mx-2 justify-center">
           <h1 className="text-3xl font-bold text-center text-teal-600 mb-4">
             {event.title}
