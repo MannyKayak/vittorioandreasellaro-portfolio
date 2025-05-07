@@ -9,7 +9,7 @@ interface IMiniCard {
 
 export default function MiniCard(miniCardProps: IMiniCard) {
   return (
-    <div className="bg-white border-l-6 p-2 shadow-2xl border-l-teal-600 m-2 w-lg rounded-3xl  text-lg hover:rotate-x-5 hover:rotate-y-5 hover:-translate-y-2 duration-1000">
+    <div className="bg-white border-l-6 p-2 shadow-2xl border-l-teal-600 mb-4 rounded-3xl text-lg hover:rotate-x-5 hover:rotate-y-5 hover:-translate-y-2 duration-1000 w-full max-w-md md:max-w-lg lg:max-w-lg">
       <div className="overflow-hidden">{miniCardProps.title}</div>
       <div>
         <Link

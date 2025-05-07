@@ -18,9 +18,7 @@ export default function AboutSection({
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         {/* Testo principale - in alto a sinistra */}
         <div className="md:col-span-7 space-y-5">
-          <h2 className="text-4xl font-bold text-teal-600 dark:text-white">
-            Su di me...
-          </h2>
+          <h2 className="text-4xl font-bold text-teal-600 ">Su di me...</h2>
           <p className="text-lg text-gray-700 dark:text-gray-300">
             <strong style={{ color: "#00897b" }}>
               Vittorio Andrea Sellaro
@@ -52,9 +50,8 @@ export default function AboutSection({
             <Image
               src={portraitUrl}
               alt="Vittorio Andrea Sellaro"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-xl"
+              fill
+              className="rounded-xl object-cover"
             />
           </div>
         </div>
@@ -65,9 +62,8 @@ export default function AboutSection({
             <Image
               src={conferenceUrl}
               alt="BIM Know Conference"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-xl"
+              fill
+              className="rounded-xl object-cover"
             />
           </div>
         </div>

@@ -12,10 +12,10 @@ export default function ScrollDownIndicator() {
         duration: 1,
         ease: "easeInOut",
       }}
-      className="absolute bottom-4 right-2 transform -translate-x-1 "
+      className="absolute bottom-4 right-2 transform -translate-x-1 z-30"
     >
       <a
-        href="#next-section"
+        href="#bim-section"
         className="flex flex-col items-center justify-start"
       >
         <svg

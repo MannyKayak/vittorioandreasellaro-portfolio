@@ -19,7 +19,7 @@ export default function ArticleShowList() {
   }, []);
 
   return (
-    <div className="grid grid-cols-1">
+    <div className="grid grid-cols-1 w-full ">
       {articles.map((article) => (
         <MiniCard
           key={article.id}
