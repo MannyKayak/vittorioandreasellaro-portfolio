@@ -5,15 +5,14 @@ export default function BIMknow() {
   return (
     <>
       <Navbar />
-      <main className="max-w-3xl mx-auto py-12 px-4">
-        <div className="flex flex-row gap-2">
-          <h2 className="flex text-2xl font-bold mb-4 text-gray-800">
+      <main className="max-w-3xl mx-auto mt-4 px-4 justify-center font-bim-medium text-black">
+        <div className="flex gap-2 justify-center">
+          <h1 className=" text-4xl font-bold mb-4 text-gray-700">
             Tutti gli eventi{" "}
-          </h2>
-          <h2 className="flex text-2xl font-bold mb-4 text-teal-600">
-            {" "}
-            BIM(k)now!
-          </h2>
+            <strong className="text-4xl font-bold mb-4 text-teal-600">
+              BIM(k)now!
+            </strong>{" "}
+          </h1>
         </div>
 
         <CalendarList />

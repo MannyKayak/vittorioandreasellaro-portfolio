@@ -9,10 +9,10 @@ type Props = {
 
 export default function ArticleFeed({ articles }: Props) {
   return (
-    <div className="w-full px-4 py-10 bg-gradient-to-b from-gray-100 to-white">
-      <h2 className="text-4xl font-bold text-center mb-12 text-gray-700">
-        📚 Tutti gli articoli su BIM (K)now!
-      </h2>
+    <div className="w-full px-4 py-4 bg-gradient-to-b from-gray-100 to-white bg-white font-bim-medium">
+      <h1 className="text-4xl font-bold text-center mb-12 text-gray-700">
+        <strong className="text-teal-600">BIM (K)now!</strong> fa parlare di sé
+      </h1>
 
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
         {articles.map((article, index) => (

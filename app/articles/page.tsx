@@ -24,7 +24,7 @@ export default function ArticlesPage() {
     fetchArticles();
   }, [articles]);
   return (
-    <div className="bg-white">
+    <div className="bg-white text-gray-700">
       <Navbar />
       {message ? <div>{message}</div> : <ArticleFeed articles={articles} />}
     </div>
