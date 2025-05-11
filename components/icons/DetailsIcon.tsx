@@ -7,7 +7,7 @@ export default function DetailsIcon() {
       fill="none"
       viewBox="0 0 24 24"
       strokeWidth={2}
-      className="size-6 stroke-teal-600"
+      className="size-6 stroke-teal-600 active:stroke-teal-300 hover:stroke-teal-300"
     >
       <path
         strokeLinecap="round"

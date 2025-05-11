@@ -1,7 +1,7 @@
 "use client";
 import ArticleFeed from "@/components/ArticleFeed";
 import React, { useEffect, useState } from "react";
-import { Article } from "../types";
+import { Article } from "../../types";
 import Navbar from "@/components/Navbar";
 import { orderByArticleDate } from "@/functions/utils";
 
@@ -25,7 +25,6 @@ export default function ArticlesPage() {
   }, [articles]);
   return (
     <div className="bg-white text-gray-700">
-      <Navbar />
       {message ? <div>{message}</div> : <ArticleFeed articles={articles} />}
     </div>
   );

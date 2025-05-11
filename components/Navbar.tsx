@@ -30,7 +30,7 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8 text-gray-700 font-semibold">
             <Link
-              href="/bimknow/bimEventsCalendar"
+              href="/bimknow/events"
               className="hover:text-teal-600 active:text-teal-600 transition"
             >
               Calendario
@@ -42,13 +42,13 @@ export default function Navbar() {
               Eventi
             </Link>
             <Link
-              href="/articles"
+              href="/bimknow/articles"
               className="hover:text-teal-600 active:text-teal-600 transition"
             >
               Articoli
             </Link>
             <Link
-              href="/bimknow"
+              href="/bimknow/contact"
               className="hover:text-teal-600 active:text-teal-600 transition"
             >
               Contatti
