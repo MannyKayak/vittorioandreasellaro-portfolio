@@ -76,11 +76,12 @@ export default function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-inner px-6 pb-4 pt-2">
+        <div className="md:hidden bg-white shadow-inner px-6 pb-4 pt-2 ">
           <Link
             href="/bimknow/events"
             passHref
             className="block py-2 text-gray-700 hover:text-teal-600 active:text-teal-600"
+            onClick={toggleMenu}
           >
             Calendario
           </Link>
@@ -88,6 +89,7 @@ export default function Navbar() {
             href="/bimknow"
             passHref
             className="block py-2 text-gray-700 hover:text-teal-600 active:text-teal-600"
+            onClick={toggleMenu}
           >
             Eventi
           </Link>
@@ -95,6 +97,7 @@ export default function Navbar() {
             href="/bimknow/articles"
             passHref
             className="block py-2 text-gray-700 hover:text-teal-600 active:text-teal-600"
+            onClick={toggleMenu}
           >
             Articoli
           </Link>
@@ -102,6 +105,7 @@ export default function Navbar() {
             href="/bimknow/contact"
             passHref
             className="block py-2 text-gray-700 hover:text-teal-600 active:text-teal-600"
+            onClick={toggleMenu}
           >
             Contatti
           </Link>
