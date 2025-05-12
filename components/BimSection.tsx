@@ -41,7 +41,7 @@ export default function BimSection() {
           <div className="flex justify-center">
             <h1>
               <Link
-                href={"/articles"}
+                href={"/bimknow/articles"}
                 className="font-bold z-30 text-teal-600 hover:text-teal-300"
               >
                 Qui

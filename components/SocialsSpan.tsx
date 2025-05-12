@@ -13,7 +13,7 @@ export default function SocialsSpan() {
       <div className="flex gap-4 mt-4">
         {/* Facebook */}
         <Link
-          href="https://www.facebook.com/DesignDataUsers"
+          href="https://www.facebook.com/vsellaro"
           passHref
           target="_blank"
           className="h-8 w-8"
@@ -28,7 +28,7 @@ export default function SocialsSpan() {
         </Link>
         {/* Instagram */}
         <Link
-          href="https://www.instagram.com/ddu_bimcommunity/"
+          href="https://www.instagram.com/svandrea_7/"
           passHref
           target="_blank"
           className="w-8 h-8"
@@ -71,8 +71,11 @@ export default function SocialsSpan() {
         </div>
       </div>
       {emailSpan ? (
-        <div className="text-gray-500 text-2xl mx-4 mt-4 border-2 border-gray-500 rounded-2xl p-4">
-          {emailSpan}
+        <div className="flex flex-col items-center mt-4 text-3xl text-gray-500">
+          <h1>Scrivimi a: </h1>
+          <div className="text-teal-600 text-2xl mx-4 mt-4 border-2 border-gray-500 rounded-2xl p-4">
+            {emailSpan}
+          </div>
         </div>
       ) : null}
     </div>

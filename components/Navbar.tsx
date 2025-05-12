@@ -31,11 +31,13 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8 text-gray-700 font-semibold">
             <Link
               href="/bimknow/events"
+              passHref
               className="hover:text-teal-600 active:text-teal-600 transition"
             >
               Calendario
             </Link>
             <Link
+              passHref
               href="/bimknow"
               className="hover:text-teal-600 active:text-teal-600 transition"
             >
@@ -43,6 +45,7 @@ export default function Navbar() {
             </Link>
             <Link
               href="/bimknow/articles"
+              passHref
               className="hover:text-teal-600 active:text-teal-600 transition"
             >
               Articoli
@@ -75,25 +78,29 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white shadow-inner px-6 pb-4 pt-2">
           <Link
-            href="/bimknow/bimEventsCalendar"
+            href="/bimknow/events"
+            passHref
             className="block py-2 text-gray-700 hover:text-teal-600 active:text-teal-600"
           >
             Calendario
           </Link>
           <Link
             href="/bimknow"
+            passHref
             className="block py-2 text-gray-700 hover:text-teal-600 active:text-teal-600"
           >
             Eventi
           </Link>
           <Link
-            href="/articles"
+            href="/bimknow/articles"
+            passHref
             className="block py-2 text-gray-700 hover:text-teal-600 active:text-teal-600"
           >
             Articoli
           </Link>
           <Link
-            href="/bimknow"
+            href="/bimknow/contact"
+            passHref
             className="block py-2 text-gray-700 hover:text-teal-600 active:text-teal-600"
           >
             Contatti
