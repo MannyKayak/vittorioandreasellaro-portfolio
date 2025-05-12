@@ -2,11 +2,28 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
+import CopyIcon from "./icons/CopyIcon";
 
 const myEmail = "vittorioandrea.sellaro@gmail.com";
+const emailMessages = {
+  initial: "Copia mail negli appunti",
+  copied: "Email copiata!",
+};
 
 export default function SocialsSpan() {
   const [emailSpan, setEmailSpan] = useState<string>("");
+  const [copyMessage, setCopyMessage] = useState<string>(emailMessages.initial);
+
+  const copyMail = () => {
+    navigator.clipboard.writeText(emailSpan);
+    setCopyMessage(emailMessages.copied);
+  };
+
+  const toggleEmailDiv = () => {
+    setEmailSpan(emailSpan ? "" : myEmail);
+    setCopyMessage(emailMessages.initial);
+  };
+
   return (
     <div className="flex flex-col justify-center items-center text-4xl font-bold mb-4 text-gray-700">
       <h1>I miei riferimenti</h1>
@@ -57,10 +74,7 @@ export default function SocialsSpan() {
           />
         </Link>
         {/* mail */}
-        <div
-          className="w-8 h-8"
-          onClick={() => setEmailSpan(emailSpan ? "" : myEmail)}
-        >
+        <div className="w-8 h-8" onClick={toggleEmailDiv}>
           <Image
             src="/logos/email-logo.png"
             alt="email-logo"
@@ -75,6 +89,12 @@ export default function SocialsSpan() {
           <h1>Scrivimi a: </h1>
           <div className="text-teal-600 text-2xl mx-4 mt-4 border-2 border-gray-500 rounded-2xl p-4">
             {emailSpan}
+          </div>
+          <div className="flex flex-row w-full mt-4 px-8 items-center justify-end gap-4">
+            <span className="text-sm">{copyMessage}</span>
+            <button onClick={copyMail}>
+              <CopyIcon />
+            </button>
           </div>
         </div>
       ) : null}
